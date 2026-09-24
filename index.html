@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porto Dhani</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        if (localStorage.getItem("theme") === "irenk") {
+            document.addEventListener("DOMContentLoaded", () => {
+                document.body.setAttribute("data-theme", "irenk");
+            });
+        }
+    </script>
+</head>
+<body>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Ganti mode gelap atau terang">
+        <span class="icon-cahaya">🌞</span>
+        <span class="icon-irenk">🌚</span>
+    </button>
+
+    <main class="main-content">
+   
+        <section class="dhani" id="dhani" aria-labelledby="dhani-heading">
+            <div class="container orang">
+                <div class="yapping">
+                    <p class="sapa">halooo, akuu</p>
+                    <h1 class="nama" id="dhani-heading">Dhani Ramadhani</h1>
+                    <p class="asbun">Mahasiswa Informatika Universitas Jember yang lagi belajar software development.</p>
+                </div>
+                <figure class="fotoku">
+                    <img src="aset/image.png" alt="foto Dhani" width="300" height="400"/>
+                </figure>
+            </div>
+        </section>
+
+
+        <section class="yapping2 reveal" id="yapping2" aria-labelledby="yapping2-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="yapping2-heading">About Me</h2>
+                </header>
+
+                <div class="isi-yapping2">
+                    <div class="teks-yapping">
+                        <p>Aku Mahasiswa Informatika yang lagi belajar IT mulai dari nol, 
+                           sekarang aku masih fokus buat ngembangin skill backend dan web development mulai dari
+                           projek pribadi atau tugas kuliah biasa. Selain itu aku juga aktif di kepanitiaan mulai
+                           dari aku sma sampai saat ini. Di kepanitiaan itu lah aku ngembangin soft skill ku berupa
+                           kerja sama tim dan juga komunikasi yang bantu aku untuk memperluas relasi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="skil reveal" id="skil" aria-labelledby="skil-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title" id="skil-heading">Skill</h2>
+                    <p class="section-subtitle">jujur, aku masih belajar tentang ini semua dari nol</p>
+                </header>
+
+                <div class="item-skil">
+                    <span>backend</span>
+                    <div class="progress">
+                        <div class="progress-fill-be"></div>
+                    </div>
+                </div>
+
+                <div class="item-skil">
+                    <span>database</span>
+                    <div class="progress">
+                        <div class="progress-fill-db"></div>
+                    </div>
+                </div>
+
+                <div class="item-skil">
+                    <span>frontend</span>
+                    <div class="progress">
+                        <div class="progress-fill-fe"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="edukasi reveal" id="edukasi" aria-labelledby="edukasi-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title" id="edukasi-heading">Education</h2>
+                </header>
+            
+                <ol class="timeline">
+                    <li class="timeline-item">
+                        <article class="timeline-card">
+                            <header class="timeline-card-header">
+                                <h3 class="timeline-title">Fakultas Ilmu Komputer - Universitas Jember</h3>
+                                <time class="timeline-date" datetime="2025">2025 - sekarang</time>
+                            </header>
+                            <p class="timeline-description">
+                                Disini, aku belajar banyak hal mulai dari database, struktur data, algoritma dan lain lain.
+                            </p>
+                        </article>
+                    </li>
+
+                    <li class="timeline-item">
+                        <article class="timeline-card">
+                            <header class="timeline-card-header">
+                                <h3 class="timeline-title">IPA - SMAS Muhammadiyah 2 Genteng</h3>
+                                <time class="timeline-date" datetime="2025">lupa kapan masuk sma - 2025</time>
+                            </header>
+                            <p class="timeline-description">
+                                Disini, aku belajar mulai dari pelajaran umum, organisasi dan pengalaman unik lainnya.
+                            </p>
+                        </article>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+   
+        <section class="contact reveal" id="contact">
+            <div class="container contact-center">
+                <a href="https://instagram.com/gwehj.dhanz" target="_blank" rel="noopener noreferrer" class="instagram-link">
+                    <img src="aset/instagram.svg" alt="" class="sosmed-icon" width="22" height="22">
+                    <span>@gwehj.dhanz</span>
+                </a>
+
+                <a href="https://github.com/DhnRmdhn" target="_blank" rel="noopener noreferrer" class="github-link">
+                    <img src="aset/GitHub_Invertocat_Logo.svg" alt="" class="sosmed-icon" width="22" height="22">
+                    <span>DhnRmdhn</span>
+                </a>
+            </div>
+        </section>
+    </main> 
+
+  
+    <script src="script.js" defer></script>
+</body>
+</html>

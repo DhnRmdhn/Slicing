@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+
+body {
+  --bg: #ffffff;
+  --card: #f8f8f873;
+  --text: #1a1a2e;
+  --text-cahaya: #555;
+  --accent: #8f89ff;
+  --accent-cahaya: #000000;
+  --border: #e9e4e4;
+  --radius: 10px;
+  --max-width: 960px;
+}
+
+body[data-theme="irenk"] {
+  --bg: #222229;
+  --card: #1e1b1b;
+  --text: #f0f0f5;
+  --text-cahaya: #ffffff;
+  --accent: #ff5f5f;
+  --accent-cahaya: #ffffff;
+  --border: #6f6060;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.9;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--card);
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  opacity: 0.8;
+}
+
+.icon-irenk {
+  display: none;
+}
+
+body[data-theme="irenk"] .icon-cahaya {
+  display: none;
+}
+
+body[data-theme="irenk"] .icon-irenk {
+  display: inline;
+}
+
+img {
+  max-width: 400px;
+  max-height: 400px;
+  display: block;
+}
+
+.container {
+  width: min(100%, var(--max-width));
+  margin-inline: auto;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+
+.main-content {
+  padding: 72px 24px 40px;
+}
+
+
+.section-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.section-subtitle {
+  color: var(--text-cahaya);
+  margin-top: 8px;
+}
+
+
+.dhani {
+  margin-bottom: 60px;
+}
+
+.orang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(32px, 8vw, 96px);
+  flex-wrap: wrap;
+}
+
+.yapping {
+  flex: 2;
+  min-width: 260px;
+}
+
+.sapa {
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.nama {
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.asbun {
+  color: var(--text-cahaya);
+  max-width: 420px;
+}
+
+.fotoku img {
+  width: clamp(220px, 30vw, 300px);
+  height: clamp(220px, 30vw, 300px);
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent-cahaya);
+}
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.muncul {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.yapping2 {
+  margin-bottom: 60px;
+}
+
+.teks-yapping {
+  background: var(--card);
+  padding: 28px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  text-align: justify;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.skil {
+  margin-bottom: 60px;
+}
+
+.item-skil {
+  margin-bottom: 20px;
+}
+
+.item-skil span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.progress {
+  height: 10px;
+  background: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress > div {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 999px;
+}
+
+.progress-fill-be { width: 50%; }
+.progress-fill-db { width: 43%; }
+.progress-fill-fe { width: 45%; }
+
+
+.edukasi {
+  margin-bottom: 60px;
+}
+
+.timeline {
+  list-style: none;
+  border-left: 3px solid var(--accent);
+  padding-left: 24px;
+}
+
+.timeline-item {
+  margin-bottom: 24px;
+}
+
+.timeline-card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.timeline-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.timeline-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.timeline-date {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.timeline-description {
+  color: var(--text-cahaya);
+  font-size: 0.95rem;
+}
+
+.contact {
+  margin-bottom: 40px;
+}
+
+.contact-center {
+  display: flex;
+  justify-content: center;
+  gap: 19px;
+  flex-wrap: wrap;
+}
+
+.instagram-link,
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: var(--radius);
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.instagram-link:hover,
+.github-link:hover {
+  opacity: 0.65;
+}
+
+.sosmed-icon {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1);
+}
+
+
+@media (max-width: 640px) {
+  .main-content {
+    padding: 76px 16px 28px;
+  }
+
+  .theme-toggle {
+    top: 14px;
+    right: 14px;
+  }
+
+  .orang {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .asbun {
+    margin: 0 auto;
+  }
+
+  .fotoku img {
+    width: min(62vw, 240px);
+    height: min(62vw, 240px);
+    margin: 0 auto;
+  }
+
+  .teks-yapping,
+  .timeline-card {
+    padding: 20px;
+  }
+
+  .timeline {
+    padding-left: 18px;
+  }
+
+  .instagram-link,
+  .github-link {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .timeline-card-header {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .main-content {
+    padding-inline: 32px;
+  }
+
+  .orang {
+    gap: 32px;
+  }
+
+  .yapping {
+    flex: 1 1 320px;
+  }
+
+  .fotoku {
+    margin-inline: auto;
+  }
+}
